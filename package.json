@@ -1,0 +1,23 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard Musa Formazione",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiofolgori/musa-dashboard.git"
+  },
+  "keywords": [
+    "musa",
+    "dashboard"
+  ],
+  "author": "Musa Formazione",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabiofolgori/musa-dashboard/issues"
+  },
+  "homepage": "https://github.com/fabiofolgori/musa-dashboard#readme"
+}
