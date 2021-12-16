@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/fabiofolgori/musa-dashboard/issues"
   },
-  "homepage": "https://github.com/fabiofolgori/musa-dashboard#readme"
+  "homepage": "https://github.com/fabiofolgori/musa-dashboard#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }
