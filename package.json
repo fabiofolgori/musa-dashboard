@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/fabiofolgori/musa-dashboard#readme",
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.1.3",
+    "chartjs": "^0.3.24"
   }
 }
