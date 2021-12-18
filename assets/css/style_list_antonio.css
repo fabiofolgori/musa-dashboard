@@ -1,0 +1,98 @@
+::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1px rgb(255 255 255 / 50%);
+    box-shadow: none;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(85, 83, 83, 0.432);
+}
+
+#note{
+    padding: 0.5rem;
+    position: relative;
+    align-items: center;
+}
+#lista{
+    height: 400px;
+    overflow-y: scroll;
+    align-items: center;
+}
+ul li{
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    list-style: none;
+    align-items: center;
+}
+
+ul li span{
+    float: right;
+    font-weight: bold;
+    align-items: center;
+}
+input[type=checkbox]:checked + label.label{
+    text-decoration: line-through;
+  }
+/************* pulsanti ***************/
+.pulsanti{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+.new{
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    background: rgba(54, 162, 235, 0.2);
+    border: 1px solid rgba(54, 162, 235, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    font-size: 1.5rem;
+    color: rgba(54, 162, 235, 1);
+}
+.erase{
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    background: rgba(153, 102, 255, 0.2);
+    border: 1px solid rgba(153, 102, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    font-size: 1.5rem;
+    color: rgba(153, 102, 255, 1);;
+}
+.new:active{
+    background: rgba(54, 162, 235, 0.8);
+    color: #fff;
+}
+.erase:active{
+    background: rgba(153, 102, 255, 0.8);
+    color: #fff;
+}
+.new:hover{
+    background: rgba(54, 162, 235, 0.35);
+    transition: 0.15s;
+}
+.erase:hover{
+    background: rgba(153, 102, 255, 0.35);
+    transition: 0.15s;
+}
+.simbol{
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+.simbol:active{
+    color: #fff;
+}

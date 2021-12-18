@@ -1,7 +1,7 @@
 window.addEventListener('load', onLoad);
 
 function onLoad() {
-
+    //script JS Fabio
     const ctx = document.getElementById('chart-fabio').getContext('2d');
     const chartFabio = new Chart(ctx, {
         type: 'bar',
@@ -37,6 +37,8 @@ function onLoad() {
             }
         }
     });
+
+    //script JS Valerio
     const ctxvalerio = document.getElementById('chart-valerio').getContext('2d');
     const chartValerio = new Chart(ctxvalerio, {
         type: 'pie',
@@ -70,4 +72,6 @@ function onLoad() {
             }
         }
     });
+
+  
 }
