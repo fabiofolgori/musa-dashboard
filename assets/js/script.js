@@ -73,5 +73,51 @@ function onLoad() {
         }
     });
 
-  
+    // script marco
+
+    
+    const ctx_marco = document.getElementById('chart-marco').getContext('2d');
+    const myChart = new Chart(ctx_marco, {
+        type: 'polarArea',
+        data: {
+            labels: ['HTML', 'CSS', 'JS', 'JQuery', 'PHP', 'Python'],
+            datasets: [{
+                data: [33, 25, 20, 15, 30, 22],
+                backgroundColor: [
+                    'rgb(229, 76, 33, 0.7)',
+                    'rgba(36, 73, 216, 0.7)',
+                    'rgba(247, 223, 30, 0.7)',
+                    'rgba(7, 100, 164, 0.7)',
+                    'rgba(130, 140, 183, 0.7)',
+                    'rgba(13, 249, 16, 0.7)'
+                ],
+                borderColor: [
+                    'rgba(229, 76, 33, 1)',
+                    'rgba(36, 73, 216, 1)',
+                    'rgba(247, 223, 30, 1)',
+                    'rgba(7, 100, 164, 1)',
+                    'rgba(130, 140, 183, 1)',
+                    'rgba(13, 249, 16, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                position: 'bottom',
+                },
+                title: {
+                    display: true,
+                    text: 'Corsi svolti',
+                font: {
+                    size: 18,
+                }
+                }
+            }
+        },
+    });
+
+
 }
