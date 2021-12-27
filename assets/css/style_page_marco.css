@@ -122,3 +122,10 @@ body {
   margin: 0;
   border-radius: 0;
 }
+.featurette-heading {
+  margin-top: 4rem;
+}
+.featurette-heading,
+.form{
+  margin-top: 0;
+}
