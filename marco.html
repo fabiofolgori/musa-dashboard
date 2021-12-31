@@ -23,34 +23,34 @@
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo_musa_new.svg" alt="" width="200" height="60" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Cerca il corso..."
-                            aria-label="Search" />
-                        <button class="btn btn-outline-primary" type="submit">
-                            Cerca
-                        </button>
-                    </form>
-                </div>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_musa_new.svg" alt="" width="200" height="60" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Cerca il corso..."
+                        aria-label="Search" />
+                    <button class="btn btn-outline-primary" type="submit">
+                        Cerca
+                    </button>
+                </form>
             </div>
-        </nav>
+        </div>
+    </nav>
     </header>
 
     <main>
@@ -230,52 +230,65 @@
 
             <hr class="featurette-divider" />
 
-            <div class="row featurette mt-0">
-                <div class="col-md-12 text-center">
-                    <h2 class="featurette-heading form">Invia il tuo messaggio</h2>
-                    <p class="lead">Compila il form e sarai subiro ricontattato dal nostro staff!!</p>
-                </div>    
-            </div>
-
-            <div class="col-md-8 m-auto mt-5">
-                <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-6">
-                        <label for="validationCustom01" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Inserisci il tuo nome..." required>
-                        <div class="valid-feedback">Corretto!</div>
+            <div class="form_test">
+                <div class="row featurette mt-0">
+                    <div class="col-md-12 text-center">
+                        <h2 class="featurette-heading form">Invia il tuo messaggio</h2>
+                        <p class="lead">Compila il form e sarai subiro ricontattato dal nostro staff!!</p>
                     </div>
-                    <div class="col-md-6">
-                        <label for="validationCustom02" class="form-label">Cognome</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Inserisci il tuo cognome..." required>
-                        <div class="valid-feedback">Corretto!</div>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="validationCustom03" class="form-label">Tel:</label>
-                        <input type="text" class="form-control" id="validationCustom03" value="" placeholder="+39" required>
-                        <div class="valid-feedback">Corretto!</div>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="validationCustom04" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="validationCustom04" placeholder="@" required>
-                        <div class="valid-feedback">Corretto!</div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Scrivi qui..." id="floatingTextarea">jhguyf</textarea>
-                            <label for="floatingTextarea">Inserisci il tuo messaggio...</label>
+                </div>
+    
+                <div class="col-md-8 m-auto mt-5">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+                            <div class="valid-feedback">
+                                ok!
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">Accetta i termini e le condizioni.</label>
-                            <div class="invalid-feedback">Devi acconsentire prima di inviare.</div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Cognome</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" required>
+                            <div class="valid-feedback">
+                                ok!
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-grid gap-2 col-2 mx-auto mt-5">
-                        <button class="btn btn-primary" type="submit">Invia</button>
-                    </div>
-                </form>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">@</label>
+                            <input type="email" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Inserisci mail valida.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Tel</label>
+                            <input type="number" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Inserisci telefono valido.
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea class="form-control" placeholder="Inserisci il tuo messaggio"
+                                id="floatingTextarea"></textarea>
+                        </div>
+                        <div class="col-12 mt-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Accetto termini e condizioni
+                                </label>
+                                <div class="invalid-feedback">
+                                    Accetta.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-5 text-center">
+                            <button class="btn btn-primary" type="submit">Invia</button>
+                        </div>
+                    </form>
+                </div>
+    
             </div>
         </div>
 
