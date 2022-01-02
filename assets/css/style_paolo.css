@@ -88,3 +88,15 @@
   background: #ea4c4c;
   color: #fff;
 }
+
+.cardP {
+  height: 200px;
+  background-color:rgb(239, 239, 239);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5%;
+  }
+
+  a {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
