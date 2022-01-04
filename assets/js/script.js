@@ -302,11 +302,11 @@ var cal = {
   },
 
   // (G) DELETE EVENT FOR SELECTED DATE
-  del : () => { if (confirm("Sei sicuro?")) {
+  del : () => {
     delete cal.data[cal.sDay];
     localStorage.setItem(`cal-${cal.sMth}-${cal.sYear}`, JSON.stringify(cal.data));
     cal.list();
-  }}
+  }
 };
 window.addEventListener("load", cal.init);
 
