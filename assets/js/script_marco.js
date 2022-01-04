@@ -32,8 +32,65 @@ $(document).ready(function(){
           form.classList.add('was-validated')
         }, false)
       })
-  })()
-    
-    
+    })()
+});
 
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialDate: '2022-01-01',
+    initialView: 'dayGridMonth',
+    height: 600,
+    weekNumbers: true,
+    weekText: "Settimana ",
+    selectable: true,
+    events: [
+      {
+        title: 'Corso Javascript',
+        start: '2022-01-11T17:00:00',
+        allDay: true,
+      },
+      {
+        title: 'Corso Javascript',
+        start: '2022-01-13T17:00:00',
+        allDay: true,
+      },
+      {
+        title: 'Corso HTML',
+        start: '2022-01-09',
+        allDay: true,
+      },
+      {
+        title: 'Corso HTML',
+        start: '2022-01-12',
+        allDay: true,
+      },
+      {
+        title: 'Corso CSS',
+        start: '2022-01-16',
+        allDay: true,
+      },
+      {
+        title: 'Corso CSS',
+        start: '2022-01-18',
+        allDay: true,
+      },
+      {
+        title: 'Corso PYTHON',
+        start: '2022-01-17',
+        allDay: true,
+      },
+      {
+        title: 'Corso PYTHON',
+        start: '2022-01-19',
+        allDay: true,
+      }
+    ],
+    eventBackgroundColor: '#072a5e',
+    eventBorderColor: 'red',
+    eventTextColor: 'yellow',
+    selectable: true,
+  });
+
+  calendar.render();
 });

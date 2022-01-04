@@ -8,18 +8,21 @@
 
     <!-- Bootstrap core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style_page_marco.css" />
 
-    <!-- css FLICKITY -->
+    <!-- LIB css -->
     <link rel="stylesheet" href="node_modules/flickity/dist/flickity.min.css" media="screen" />
+    <link rel="stylesheet" href="assets/css/style_page_marco.css" />
+    <link rel="stylesheet" href="node_modules/fullcalendar/main.min.css">
 
     <link rel="stylesheet" href="assets/css/style_page_marco.css" />
 
-    <!-- js JQUERY -->
+    <!-- LIB js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="assets/js/script_marco.js"></script>
-    <!-- js FLICKITY -->
     <script src="node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="node_modules/fullcalendar/main.min.js"></script>
+
+    <script src="assets/js/script_marco.js"></script>
+
 </head>
 
 <body>
@@ -102,7 +105,7 @@
                 </div>
                 <!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img src="img/js.svg" alt="js" width="180px" class="mb-3" />
+                    <img id="javascript" src="img/js.svg" alt="js" width="180px" class="mb-3" />
 
                     <h2>JavaScript</h2>
                     <p>
@@ -196,7 +199,9 @@
             </div>
 
             <hr class="featurette-divider" />
-            
+
+            <h2 class="featurette-heading mb-5 mt-0 text-center">Calendario lezioni</h2>
+
             <div id='calendar'></div>
 
             <hr class="featurette-divider" />
