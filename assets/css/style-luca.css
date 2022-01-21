@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+.contenitore{
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    height: 400px;
+    
+}
+
+.bg-cover{
+    background: linear-gradient(0deg, rgba(0,0,0,.2), rgba(0,0,0,0.20)),url(../../img/img-luca/pexels-alexandr-podvalny-1227513.jpg);
+    background-size: cover;
+
+}
+
+.bg-cielo-sereno{
+    background: linear-gradient(0deg, rgba(0,0,0,.2), rgba(0,0,0,0.20)),url(../../img/img-luca/pexels-jonas-ferlin-3025562.jpg);
+    background-size: cover;
+}
+.bg-nubi-sparse{
+    background: linear-gradient(0deg, rgba(0,0,0,.2), rgba(0,0,0,0.20)),url(../../img/img-luca/pexels-pixabay-209831.jpg);
+    background-size: cover;
+
+}
+
+.display-meteo{
+    height: 50%;
+}
+
+.title-input{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+#citta{
+    width: 70%;
+    padding: 2px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+#getmeteo{
+    width: 25%;
+    border-radius: 7px;
+    margin-top: 5px;
+    font-size: 12px;
+}
