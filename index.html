@@ -19,6 +19,9 @@
     <script src="node_modules/chart.js/dist/chart.min.js"></script>
     <script src="assets/js/script.js"></script>   
     <link rel="stylesheet" href="assets/css/style_list_antonio.css">
+
+    <script src="assets/js/script-luca.js"></script>
+    <link rel="stylesheet" href="assets/css/style-luca.css">
 </head>
 
 <body>
@@ -241,8 +244,38 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Luca</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolorum, voluptate unde doloremque possimus ipsa modi distinctio saepe sint, maiores quam voluptatum perferendis voluptas eius iusto eligendi in at harum.</p>
-                                    <a href="#" class="btn btn-primary"></a>
+                                        <div class="contenitore bg-cover">
+                                          <div class="row display-meteo">
+                                            <div class="col-md-6 title-input">
+                                              <h2 class="">Il Meteo</h2>
+                                              <input type="text" id="citta" placeholder="cerca il meteo di una città">
+                                              <button id="getmeteo">cerca</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <h1 id="city-name" class="fs-4 text-center"></h1>
+                                              <div class="orologio d-flex fs-4 justify-content-center">
+                                                <div class="orario"></div>
+                                                <div class="orario me-1"></div>:
+                                                <div class="orario ms-1"></div>
+                                                <div class="orario"></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <section class="info-meteo">
+                                            <div class="row">
+                                              <div id="temperature" class="col-md-6 fs-5 text-center">
+                                                  <div id="temperatura">temperatura</div>
+                                                  <span id="min" class="fs-6"></span>
+                                                  <span id="max" class="fs-6"></span>
+                                              </div>   
+                                              <div id="umidita" class="col-md-6 fs-5 text-center">umidità</div>
+                                            </div>
+                                            <div class="row mt-5">
+                                              <div id="pressione" class="col-md-6 fs-5 text-center">pressione</div>
+                                              <div id="descrizione" class="col-md-6 fs-5 text-center">descrizione</div>
+                                            </div>
+                                          </section>
+                                        </div>
                                 </div>
                             </div>
                         </div>
