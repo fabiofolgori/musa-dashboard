@@ -52,27 +52,35 @@ function getMeteo(){
 
         let weather = data.weather[0]
         let descrizione = weather.description
-        console.log(descrizione)
         document.querySelector('#descrizione').innerText ='descrizione : ' +descrizione
         
-        if (descrizione == 'cielo sereno') {
-            console.log('sono nell if')
-            document.querySelector('.contenitore').classList.remove("bg-cover")
-            document.querySelector('.contenitore').classList.add("bg-cielo-sereno")
-            
-        }
-        if (descrizione == 'nubi sparse') {
-            console.log('sono nell if')
-            document.querySelector('.contenitore').classList.remove("bg-cover")
-            document.querySelector('.contenitore').classList.add("bg-nubi-sparse")
-            
-        }
-
         let pressione = data.main.pressure;
         document.querySelector('#pressione').innerText = 'pressione :' +pressione
 
+        let contenitore = document.querySelector(".display-meteo").parentElement
+        console.log(contenitore)
+
+        if (descrizione == 'cielo sereno') {
+            contenitore.className = '';
+            contenitore.classList.add("bg-cielo-sereno")
+            contenitore.classList.add("contenitore")
+            
+        }else if (descrizione == 'cielo coperto') {
+            contenitore.className = '';
+            contenitore.classList.add("bg-nubi-sparse")
+            contenitore.classList.add("contenitore")
+            
+        }else{
+            contenitore.className = '';
+            contenitore.classList.add("bg-cover")
+            contenitore.classList.add("contenitore")
+
+        }
+
         
     })
+
+    
 
 
 }
